@@ -1,11 +1,259 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Vaishnavi Raikar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vaishnavi Raikar is a bioinformatician working at the intersection of immunology, omics and computational biology.">
+  <meta name="theme-color" content="#07111f">
+  <title>Vaishnavi Raikar | Bioinformatician</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <h1>Vaishnavi Raikar</h1>
-  <p>Bioinformatician based in the Netherlands.</p>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Home">
+        <span class="brand-mark">VR</span>
+        <span>Vaishnavi Raikar</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#cv">CV</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span class="status-dot"></span> Bioinformatics · Computational Biology · Omics</p>
+            <h1>Turning complex biological data into <span class="gradient-text">clear scientific insight.</span></h1>
+            <p class="hero-intro">
+              I’m Vaishnavi, a bioinformatician based in the Netherlands. I work across immunology,
+              multi-omics and computational biology, building reproducible analyses that connect
+              molecular data to clinically meaningful questions.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">Explore my work</a>
+              <a class="button button-ghost" href="#contact">Get in touch</a>
+            </div>
+            <div class="hero-meta">
+              <span>Python</span><span>R</span><span>RNA-seq</span><span>Multi-omics</span><span>HLA</span>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" aria-hidden="true">
+            <div class="visual-card">
+              <div class="terminal-bar">
+                <span></span><span></span><span></span>
+                <p>analysis.R</p>
+              </div>
+              <pre><code><span class="code-muted"># ask a biological question</span>
+question &lt;- <span class="code-string">"Who benefits?"</span>
+
+data |&gt;
+  clean() |&gt;
+  integrate() |&gt;
+  model() |&gt;
+  interpret()
+
+<span class="code-muted"># make the result useful</span>
+insight &lt;- reproducible(
+  science = <span class="code-bool">TRUE</span>,
+  impact = <span class="code-bool">TRUE</span>
+)</code></pre>
+              <div class="signal-row">
+                <span style="--h:38%"></span><span style="--h:58%"></span><span style="--h:42%"></span>
+                <span style="--h:76%"></span><span style="--h:64%"></span><span style="--h:90%"></span>
+                <span style="--h:54%"></span><span style="--h:82%"></span><span style="--h:67%"></span>
+                <span style="--h:100%"></span><span style="--h:72%"></span><span style="--h:88%"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="section-heading reveal">
+          <p class="kicker">01 · About</p>
+          <h2>Biology first. Data with purpose.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>
+              My background is in Bioinformatics &amp; Systems Biology, with experience spanning
+              RNA sequencing, multi-omics integration, computational immunology and translational research.
+              I enjoy the point where messy biological data becomes a testable, interpretable story.
+            </p>
+            <p>
+              My work has included cancer transcriptomics, hereditary disease genomics,
+              metabolomics, kidney allocation research and HLA compatibility. I care about
+              reproducibility, thoughtful statistics and making computational results understandable
+              to the people who need to use them.
+            </p>
+          </div>
+          <div class="stats-grid reveal">
+            <article><strong>MSc</strong><span>Bioinformatics &amp;<br>Systems Biology</span></article>
+            <article><strong>Omics</strong><span>RNA-seq · Proteomics<br>Metabolomics</span></article>
+            <article><strong>Code</strong><span>Python · R<br>Linux · Git</span></article>
+            <article><strong>Focus</strong><span>Translational<br>bioinformatics</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="research">
+        <div class="section-heading reveal">
+          <p class="kicker">02 · Research</p>
+          <h2>Questions I like working on.</h2>
+        </div>
+        <div class="research-list">
+          <article class="research-item reveal">
+            <span class="research-number">01</span>
+            <div>
+              <h3>Computational immunology &amp; transplantation</h3>
+              <p>Studying HLA compatibility, epitope-level matching and equity in kidney allocation using simulation and PIRCHE-based analyses.</p>
+            </div>
+            <span class="tag">HLA · PIRCHE</span>
+          </article>
+          <article class="research-item reveal">
+            <span class="research-number">02</span>
+            <div>
+              <h3>Multi-omics &amp; molecular phenotypes</h3>
+              <p>Integrating transcriptomic, proteomic and metabolomic measurements to understand biological mechanisms and patient-level variation.</p>
+            </div>
+            <span class="tag">Multi-omics</span>
+          </article>
+          <article class="research-item reveal">
+            <span class="research-number">03</span>
+            <div>
+              <h3>Transcriptomics &amp; disease biology</h3>
+              <p>Working with bulk RNA-seq workflows, molecular classification, differential expression and pathway-level interpretation.</p>
+            </div>
+            <span class="tag">RNA-seq</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading reveal">
+          <p class="kicker">03 · Projects</p>
+          <h2>Selected computational work.</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card project-featured reveal">
+            <div class="project-topline">
+              <span class="project-type">Current research</span>
+              <span>2026</span>
+            </div>
+            <h3>Project MATCHIS</h3>
+            <p>
+              Kidney allocation simulations investigating whether epitope-based HLA matching can
+              improve compatibility and allocation outcomes for ethnically diverse recipient populations.
+            </p>
+            <div class="project-tags"><span>Python</span><span>R</span><span>PIRCHE</span><span>ETKAS</span></div>
+            <a href="https://github.com/vaishnavi132/Project-Matchis---Kidney-Allocation-Program-for-Caucasian-and-Non-Caucasian-Population.-" target="_blank" rel="noreferrer">View repository ↗</a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-topline"><span class="project-type">MSc research</span></div>
+            <h3>Colorectal cancer transcriptomics</h3>
+            <p>RNA-seq based molecular subtyping and transcriptional heterogeneity analysis across CMS, CRIS and iCMS frameworks.</p>
+            <div class="project-tags"><span>R</span><span>RNA-seq</span><span>Classification</span></div>
+            <a href="https://github.com/vaishnavi132/Major_Research_Project" target="_blank" rel="noreferrer">View repository ↗</a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-topline"><span class="project-type">Research project</span></div>
+            <h3>Multi-omics integration</h3>
+            <p>Integrated transcriptomic and metabolomic signals to investigate biological pathways and treatment-associated effects.</p>
+            <div class="project-tags"><span>Python</span><span>Cytoscape</span><span>KEGG</span></div>
+            <a href="https://github.com/vaishnavi132/Minor-Research-Project---Code" target="_blank" rel="noreferrer">View repository ↗</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="cv">
+        <div class="cv-panel reveal">
+          <div>
+            <p class="kicker">04 · CV</p>
+            <h2>A path through genomics, omics and translational bioinformatics.</h2>
+          </div>
+          <div class="timeline">
+            <article>
+              <span class="timeline-year">2026</span>
+              <div><h3>Bioinformatician · UMC Utrecht</h3><p>Computational immunology, kidney allocation simulation, HLA compatibility and PIRCHE.</p></div>
+            </article>
+            <article>
+              <span class="timeline-year">2024</span>
+              <div><h3>Research · Netherlands Cancer Institute</h3><p>Colorectal cancer transcriptomics, molecular subtyping and RNA-seq analysis.</p></div>
+            </article>
+            <article>
+              <span class="timeline-year">MSc</span>
+              <div><h3>Bioinformatics &amp; Systems Biology · VU Amsterdam / UvA</h3><p>Training across genomics, systems biology, statistics and computational analysis.</p></div>
+            </article>
+            <article>
+              <span class="timeline-year">Earlier</span>
+              <div><h3>Genomics &amp; multi-omics research</h3><p>Hereditary disease genomics, variant annotation, transcriptomics and metabolomics integration.</p></div>
+            </article>
+          </div>
+          <p class="cv-note">A downloadable CV can be added here later as <code>cv.pdf</code>.</p>
+        </div>
+      </section>
+
+      <section class="section" id="blog">
+        <div class="section-heading reveal">
+          <p class="kicker">05 · Blog</p>
+          <h2>Notes from the computational side of biology.</h2>
+        </div>
+        <div class="blog-grid">
+          <article class="blog-card reveal">
+            <span class="blog-label">Coming soon</span>
+            <h3>Why epitope-level compatibility matters in transplantation</h3>
+            <p>A practical explanation of HLA matching, PIRCHE-II and why molecular resolution can change the questions we ask.</p>
+          </article>
+          <article class="blog-card reveal">
+            <span class="blog-label">Coming soon</span>
+            <h3>Making multi-omics analysis interpretable</h3>
+            <p>Thoughts on moving from several high-dimensional datasets to one coherent biological narrative.</p>
+          </article>
+          <article class="blog-card reveal">
+            <span class="blog-label">Coming soon</span>
+            <h3>Reproducibility without overengineering</h3>
+            <p>Simple habits that make research code easier to rerun, review and trust.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="contact-panel reveal">
+          <p class="kicker">06 · Contact</p>
+          <h2>Have a biological question that needs computational thinking?</h2>
+          <p>I’m always happy to connect around bioinformatics, omics, research collaborations and interesting datasets.</p>
+          <div class="contact-actions">
+            <a class="button button-primary" href="https://github.com/vaishnavi132" target="_blank" rel="noreferrer">GitHub profile ↗</a>
+            <a class="button button-ghost" href="#home">Back to top ↑</a>
+          </div>
+          <p class="location">Based in the Netherlands · Open to research collaborations</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Vaishnavi Raikar</p>
+      <p>Built for GitHub Pages.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
